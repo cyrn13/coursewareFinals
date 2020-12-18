@@ -18,7 +18,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-danger">Delete Instructor</button>
+        <button type="submit" class="btn btn-danger">Delete Instructor</button>
       </div>
       {!!Form::close()!!}
     </div>
@@ -43,7 +43,7 @@
             Delete
         </button>
         <a href="{{url('/instructors')}}" class="btn btn-secondary float-right" style="margin-left: 5px">Cancel</a>
-        <button class="btn btn-success float-right">Update</button>
+        <button class="btn btn-primary float-right">Update</button>
 
 
         </div>

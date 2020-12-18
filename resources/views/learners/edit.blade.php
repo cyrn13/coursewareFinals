@@ -11,14 +11,14 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      {!! form::open(['url'=>'/learners', 'method'=>'delete'])!!}
+      {!! Form::open(['url'=>'/learners', 'method'=>'delete'])!!}
       <div class="modal-body">
         Are you sure you want to delete this learner?
         {{ Form::hidden('learner_id', $learner->id)}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-danger">Delete Learner</button>
+        <button type="submit" class="btn btn-danger">Delete Learner</button>
       </div>
       {!!Form::close() !!}
     </div>
@@ -40,8 +40,8 @@
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteLearnerModal">
                      Delete
             </button>
-            <a href="{{url('/learners')}}" class="btn btn-secondary floar-right" style="margin-left: 5px">Cancel</a>
-            <button class="btn btn-success float-right">Update</button>
+            <a href="{{url('/learners')}}" class="btn btn-secondary float-right" style="margin-left: 5px">Cancel</a>
+            <button class="btn btn-primary float-right">Update</button>
 
                 </div>
 

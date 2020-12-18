@@ -32,8 +32,8 @@
 {{Form::select('status',
      [
 
-    'active'        => 'Active'
-    'inactive'      => 'Inactive'
+    'active'        => 'Active',
+    'inactive'      => 'Inactive',
     'suspended'     => 'Suspended',
     
     ],

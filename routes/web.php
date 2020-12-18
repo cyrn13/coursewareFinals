@@ -18,7 +18,7 @@ Route::get('/','SiteController@index');
 Route::get('/users', 'UserController@index');
 Route::post('/users', 'UserController@store');
 Route::delete('/users', 'UserController@delete');
-Route::patch('/users/{id}', 'UserController@Update');
+Route::patch('/users/{id}', 'UserController@update');
 Route::get('/users/create', 'UserController@create');
 Route::get('/users/edit/{id}', 'UserController@edit');
 

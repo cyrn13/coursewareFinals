@@ -10,7 +10,7 @@
         </a>
 </div>
 
-<h1>List of Instructors</h1>
+<h1 class="mt-3">List of Instructors</h1>
 <table class="table table-bordered table-striped table-sm">
     <thead class="thead-dark white-text">
 

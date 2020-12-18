@@ -11,11 +11,10 @@
 </a>
 </div>
 
-<h1>List of Learners</h1>
+<h1 class="mt-3">List of Learners</h1>
 <table class="table table-bordered table-striped table-sm">
     <thead class="thead-dark white-text">
 
-    <tr>
             <th>ID#</th>
             <th>Last Name</th>
             <th>First Name</th>
@@ -23,7 +22,6 @@
             <th>Status</th>
             <th>&nbsp;</th>
     
-    </tr>
 
     </thead>
 
@@ -31,13 +29,13 @@
     @foreach($learners as $ln)
 
     <tr>
-    <td> 
             <td>{{$ln->id}}</td>
             <td>{{$ln->user->lname}}</td>
             <td>{{$ln->user->fname}}</td>
             <td>{{$ln->level}}</td>
             <td>{{$ln->status}}</td>
-            <a href="{{url('/learners/edit',['id'=>$learner])}}" class="btn btn-info btn-sm">
+            <td class="text-center">
+            <a href="{{url('/learners/edit',['id'=>$ln])}}" class="btn btn-info btn-sm">
     
                 Edit
         </a>

@@ -6,7 +6,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deleteCourseModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="deleteCourseModalLabel">Delete Course</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -18,7 +18,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Delete Course</button>
+        <button type="submit" class="btn btn-primary">Delete Course</button>
       </div>
       {!!Form::close()!!}
     </div>
@@ -41,7 +41,7 @@
 <div class="form-group">
 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteCourseModal">Delete</button>
 <a href="{{url('/courses')}}" class="btn btn-secondary float-right" style="margin-left: 5px">Cancel</a>
-<button class="btn btn-success float-right">Update</button>
+<button class="btn btn-info float-right">Update</button>
 </div>
 
     </div>
